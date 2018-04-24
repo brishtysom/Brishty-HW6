@@ -6,13 +6,13 @@ CPPFLAGS= -Wall -I/scratch/perkins/include
 LDFLAGS= -L/scratch/perkins/lib
 LDLIBS= -lcdk -lcurses
 
-EXECFILE= cdkexample
+EXECFILE= binary
 OBJS= example1.o
 
 all: $(EXECFILE)
 
 clean:
-	rm -f $(OBJS) $(EXECFILE) *~\#*
+	rm -f $(OBJS) $(EXECFILE) *~
 
 $(EXECFILE): $(OBJS)
 	$(CXX) -o $@ $(OBJS) $(LDFLAGS) $(LDLIBS)
