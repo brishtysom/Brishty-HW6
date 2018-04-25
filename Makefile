@@ -1,3 +1,6 @@
+#Brishty Som
+#bxs151130@utdallas.edu
+#CS3377
 #Makefile
 
 CXX= g++
